@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer UI</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #e0e7ff, #7f8ad1);
+      }
+
+      .timer-container {
+        background-color: #3b4d82;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 400px;
+        height: 360px;
+      }
+
+      .timer-container h1 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 65px;
+        margin-top: 25px;
+      }
+
+      .time-display {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+
+      .time-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+      }
+
+      .time-box {
+        background-color: #243056;
+        padding: 10px 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 32px;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .time-label {
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: #9aa3bc;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .buttons button {
+        background-color: #2d3a66;
+        color: #9aa3bc;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 100px;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .buttons button:disabled {
+        background-color: #3b4d82;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer-container">
+      <h1>TIMER</h1>
+      <div class="time-display">
+        <div class="time-item">
+          <div class="time-label">HRS</div>
+          <div class="time-box">00</div>
+        </div>
+        <div class="time-item">
+          <div class="time-label">MIN</div>
+          <div class="time-box">00</div>
+        </div>
+        <div class="time-item">
+          <div class="time-label">SEC</div>
+          <div class="time-box">00</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="startButton">START</button>
+        <button id="resetButton">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>
